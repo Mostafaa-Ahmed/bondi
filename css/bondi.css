@@ -1,0 +1,208 @@
+:root {
+  --dark-color: #19283f;
+  --green-color: #33d1cc;
+  --red-color: #ff3150;
+  --yellow-color: #ffc400;
+  --section-color: #eff7fa;
+}
+
+body {
+  font-family: "Roboto", sans-serif;
+}
+.main-btn {
+  background-color: var(--red-color);
+  color: var(--yellow-color);
+  padding: 0.5rem 1rem;
+}
+.main-btn:hover {
+  color: var(--yellow-color);
+}
+.main-tittle svg {
+  color: var(--yellow-color);
+}
+.main-tittle ::before {
+  content: "";
+  bottom: -10px;
+  background-color: var(--green-color);
+  width: 150px;
+  height: 2px;
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+}
+.main-tittle svg {
+  margin-bottom: 10px;
+}
+
+/* start nav bar */
+.navbar {
+  background-color: var(--dark-color);
+}
+.navbar .navbar-nav .nav-link {
+  color: white;
+}
+.navbar .navbar-nav .nav-link:focus,
+.navbar .navbar-nav .nav-link:hover,
+.navbar .navbar-nav .nav-link.active {
+  color: var(--green-color);
+}
+.navbar .search {
+  border-left: 1px solid var(--green-color);
+}
+.navbar .search svg {
+  color: var(--green-color);
+}
+.navbar .navbar-toggler {
+  color: white;
+  border-color: white;
+  font-size: 25px;
+}
+.navbar .navbar-toggler:focus {
+  box-shadow: none;
+}
+/* end nav bar */
+/* start landig */
+.landing {
+  background-color: var(--dark-color);
+  min-height: calc(100vh - 72px);
+}
+/* end landig */
+/* start feat */
+.features .icon-holder {
+  height: 200px;
+}
+.features .icon-holder svg {
+  left: 50%;
+  transform: translateX(-50%);
+}
+.features .icon-holder .number {
+  font-size: 12rem;
+  color: var(--section-color);
+}
+.features .icon-holder .icon {
+  color: var(--green-color);
+}
+.features .feat h4 {
+  color: var(--yellow-color);
+}
+/* end feat */
+/* start portfolio */
+.portfolio {
+  background-color: var(--section-color);
+}
+
+.portfolio ul li a {
+  color: black;
+  text-decoration: none;
+}
+.portfolio ul li a:hover,
+.portfolio ul .active {
+  background-color: var(--red-color);
+  color: var(--yellow-color) !important;
+  border-radius: 5px;
+}
+.portfolio ul li a {
+  padding: 0.5rem 0.7rem;
+  cursor: pointer;
+}
+.portfolio .box {
+  padding: 5px;
+  overflow: hidden;
+  position: relative;
+}
+
+.portfolio .box::before {
+  content: attr(data-port);
+  position: absolute;
+  background-color: rgb(50 209 200 /75%);
+  width: calc(100% - 10px);
+  height: calc(100% - 10px);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-weight: bold;
+  color: white;
+  transition: 0.3s;
+  font-size: 1.5rem;
+  transform: translateX(calc(-100% - 5px));
+}
+.portfolio .box:hover::before {
+  transform: translateX(0);
+}
+/* end portfolio */
+
+/* start about */
+.about .prag {
+  max-width: 500px;
+}
+/* end about */
+
+/* start team */
+.team {
+  background-color: var(--section-color);
+}
+.team h2 {
+  column-gap: var(--yellow-color);
+}
+.team .box h4 {
+  background-color: var(--green-color);
+}
+/* end team */
+/* start project */
+.project {
+  background-color: var(--dark-color);
+}
+/* end project */
+/* start sub */
+.sub {
+  background-color: var(--yellow-color);
+}
+.sub input[type="text"] {
+  background-color: transparent;
+  border: none;
+  border-bottom: 1px solid var(--section-color);
+  caret-color: var(--section-color);
+  color: var(--section-color);
+  width: 90%;
+}
+.sub input[type="text"]:focus {
+  outline: none;
+}
+.sub ::placeholder {
+  color: var(--section-color);
+}
+.sub input[type="submit"] {
+  background-color: var(--dark-color);
+  color: var(--yellow-color);
+}
+/* end sub */
+/* start footer */
+.footer {
+  background-color: var(--dark-color);
+}
+ul li a {
+  text-decoration: none;
+}
+.footer .copyright > span {
+  color: var(--green-color);
+}
+.footer .copyright div > span {
+  color: var(--yellow-color);
+}
+.footer .contact ul svg {
+  width: 20px;
+  height: 20px;
+}
+.footer .facebook {
+  background-color: #1877f2;
+}
+.footer .twitter {
+  background-color: #1da1f2;
+}
+.footer .linkedin {
+  background-color: #0077b5;
+}
+.footer .youtube {
+  background-color: #ff0000;
+}
+/* end footer */
